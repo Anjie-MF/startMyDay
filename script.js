@@ -19,9 +19,24 @@ introduce("Anjie", "front-end developer");
 introduce("Raymond", "a simple businessman");
 
 //create a function to capture input
+//var hydrationFeedback = function () {
+    //var numGlasses = Number(prompt(`How many glasses of water did you have today?`));
+    //return numGlasses;
+//};
+//var glasses = hydrationFeedback();
+//console.log(glasses);
+
+//function with prompt & conditional
 var hydrationFeedback = function () {
-    var numGlasses = Number(prompt(`How many glasses of water did you have today?`));
+    var numGlasses = Number(
+      prompt(`How many glasses of water did you have today?`)
+    );
+    if (numGlasses >= 8) {
+      console.log("Good on you mate. You are well hydrated!!");
+    } else if (numGlasses < 8) {
+      console.log("DRINK A LARGE BOTTLE OF WATER IMMEDIATELY!!");
+    }
     return numGlasses;
-};
-var glasses = hydrationFeedback();
-console.log(glasses);
+  };
+  hydrationFeedback();
+  
