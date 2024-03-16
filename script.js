@@ -15,7 +15,13 @@ var introduce = function (name, occupation) {
     console.log(`My name is ${name} and by May 2024 I will be a ${occupation}!`);
 };
 
-introduce("Anjie","front-end developer");
+introduce("Anjie", "front-end developer");
 introduce("Raymond", "a simple businessman");
 
 //create a function to capture input
+var hydrationFeedback = function () {
+    var numGlasses = Number(prompt(`How many glasses of water did you have today?`));
+    return numGlasses;
+};
+var glasses = hydrationFeedback();
+console.log(glasses);
